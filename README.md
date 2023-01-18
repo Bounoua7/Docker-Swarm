@@ -34,7 +34,10 @@ On aurez besoin des éléments suivants pour conteneuriser l'application todo-li
 <li>Le IDE Visual Studio Code
 </ul>
 <h4>Téléchargement</h4>
+  Docker version
   
+  ![Docker version](https://user-images.githubusercontent.com/86807424/213258760-fdc4e006-ba91-466c-8acb-2e643669603d.png)
+
   Docker desktop
 
 ![docker desktop](https://user-images.githubusercontent.com/86807424/213256619-24c075a9-7c93-4afb-96c3-13897161ea38.png)
@@ -68,7 +71,7 @@ New-Item -ItemType File -Path .\Dockerfile
 ![Dockerfile](https://user-images.githubusercontent.com/86807424/213256319-e6fcebd8-a8d0-4ca4-9052-812a69838520.png)
 
 
-On ajout  le contenu suivant au fichier Dockerfile 
+On ajoute  le contenu suivant au fichier Dockerfile 
 
 ````javascript
 # syntax=docker/dockerfile:1
@@ -129,14 +132,15 @@ Dans le tableau de bord Docker, on vois le conteneur en cours d’exécution qui
 Dans windows powershell on initialize docker Swarm: docker swarm init 
 après avoir le status sur docker system info Swarm: active
 
-#img
+![SWarm active](https://user-images.githubusercontent.com/86807424/213259362-cc6ce5ec-4635-4c2d-a53d-e14a2f1ae60a.png)
+
 
 Swarm fournit de nombreux outils pour la mise à l’échelle, la mise en réseau, la sécurisation et la maintenance de vos applications conteneurisées, au-delà des capacités des conteneurs eux-mêmes. 
 
 Tous les objets Swarm peuvent et doivent être décrits dans des manifestes appelés fichiers de pile. 
 
 Écrivons un fichier de pile simple pour exécuter et gérer notre application Todo, l’image de conteneur créée dans la partie de conteneurisation. 
-   Création de fichier YAML dans le repertoire Getting-started et y mettre le code suivant 
+   Création de fichier YAML dans le repertoire Getting-started 'bb-stack.yaml' et y mettre le code suivant 
    
    ````javascript
 version: '3.7'
@@ -146,21 +150,33 @@ services:
     ports:
       - "8000:3000"
    ````
-#pdpdp
-   
+![bbstack yaml deploy](https://user-images.githubusercontent.com/86807424/213259657-57796961-3379-4991-b1c5-b6e51d4387c0.png)
+  
    Déploiment de l'application sur Swarm: 
-    ````javascriptdocker stack deploy -c bb-stack.yaml demo 
+    ````javascript 
+  docker stack deploy -c bb-stack.yaml demo 
      ````
+![deploy](https://user-images.githubusercontent.com/86807424/213260221-6a6490f5-0729-47c2-a383-46c272e68348.png)
 
-#pdjhs
 
 Swarm also creates a Docker network by default to isolate the containers deployed as part of your stack.
 
    ````javascript
 docker service ls
    ````
-   
-   ------------
+   ![docker service ls ](https://user-images.githubusercontent.com/86807424/213260251-e73586db-4d21-493a-9f9e-baba790599a8.png)
+
+  Cela indique que les conteneurs  sont opérationnels. En outre, nous voyons que le port 8000 de notre machine de développement est transféré au port 3000 dans votre conteneur de mise en route.
+    
+![demobb](https://user-images.githubusercontent.com/86807424/213261285-241d3644-6565-4ee3-a73e-84f4d751425b.png)
+
+![ADDITEM](https://user-images.githubusercontent.com/86807424/213261301-0761ea0b-de88-4357-8bf1-1a4dc0f36e00.png)
+  
+ 
+
+Dans le navigateur on trouve notre application Todo à l’adresse, comme lorsque nous l’avons exécutée en tant que conteneur autonome dans la partie 2 du didacticiel de démarrage rapide.localhost:8000
+  
+    ------------
    <h3 style="color:#088A85" id="rep-id" >Conteneuriser une application </h3>
 Download and install Docker Desktop
 ![docker desktop](docker desktop.png)
@@ -171,11 +187,9 @@ Download and install Docker Desktop
 
 
    <h3 style="color:#088A85" id="synthese-id" >Synthèse et analyse spectrale d’une gamme de musique</h3>
-<h5 style="color:#FF8000"> Synthèse d’une gamme de musique</h5>
-    
+<h5 style="color:#FF8000"> Synthèse d’une gamme de musique</h5
 
---------
- 
+  --------------------
   <h3> <a href="#up-id"> UP </h3>
   </div>
 
