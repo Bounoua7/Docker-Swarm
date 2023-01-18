@@ -34,6 +34,11 @@ On aurez besoin des éléments suivants pour conteneuriser l'application todo-li
 <li>Le IDE Visual Studio Code
 </ul>
 <h4>Téléchargement</h4>
+  
+  Docker desktop
+
+![docker desktop](https://user-images.githubusercontent.com/86807424/213256619-24c075a9-7c93-4afb-96c3-13897161ea38.png)
+
 Avant de pouvoir exécuter l’application, on doit obtenir le code source de l’application. On Clonee le référentiel de mise en route à l’aide de la commande suivante :
 
 ````javascript
@@ -77,7 +82,7 @@ EXPOSE 3000
 ![Dockerfile content](https://user-images.githubusercontent.com/86807424/213256368-31c30bf3-cf89-46a2-b81f-9ccc88bdda11.png)
 
 
-Construite l’image du conteneur avec la commande :
+Construction de l’image du conteneur avec la commande :
 ````javascript
 docker build -t getting-started .
 ````
@@ -90,9 +95,6 @@ La command `docker images` affiche les images construits.
 
 ![docker images](https://user-images.githubusercontent.com/86807424/213256529-d3a186db-6a35-42df-8c21-7aa70a92cd5b.png)
 
-Docker desktop
-
-![docker desktop](https://user-images.githubusercontent.com/86807424/213256619-24c075a9-7c93-4afb-96c3-13897161ea38.png)
 
 
 <h4>Start an app container </h4>
@@ -118,8 +120,8 @@ On cliquant Add items, notre frontend stocke avec succès des éléments dans le
 Dans le tableau de bord Docker, on vois le conteneur en cours d’exécution qui utilise l’image et sur le port.getting-started3000
 
 
+![db](https://user-images.githubusercontent.com/86807424/213258151-7237d2bb-aa8f-4e06-ab22-11198a5e7f70.png)
 
-![docker desktop](https://user-images.githubusercontent.com/86807424/213257135-86e25282-f517-446d-a4ab-c76bb78f120c.png)
 
 
 <h4> <a href="#synthese-id"> Déployer sur Swarm </a></h4>
