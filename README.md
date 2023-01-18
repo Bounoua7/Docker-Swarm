@@ -25,8 +25,14 @@ Docker Swarm</h1>
 
 
 <h3 style="color:#58ACFA";>
-
 <h4> <a href="#rep-id">  Conteneuriser une application </a></h4>
+<h4> <a href="#synthese-id"> Déployer sur Swarm </a></h4>
+
+
+----------------------------------------------
+
+ <h3 style="color:#088A85" id="rep-id" >Conteneuriser une application </h3>
+
 On aurez besoin des éléments suivants pour conteneuriser l'application todo-list sur Docker  :
 <ul>
 <li>Docker s’exécutant localement.
@@ -127,7 +133,8 @@ Dans le tableau de bord Docker, on vois le conteneur en cours d’exécution qui
 
 
 
-<h4> <a href="#synthese-id"> Déployer sur Swarm </a></h4>
+ <h3 style="color:#088A85" id="synthese-id" >Déployer sur Swarm </h3>
+
 
 Dans windows powershell on initialize docker Swarm: docker swarm init 
 après avoir le status sur docker system info Swarm: active
@@ -176,18 +183,17 @@ docker service ls
 
 Dans le navigateur on trouve notre application Todo à l’adresse, comme lorsque nous l’avons exécutée en tant que conteneur autonome dans la partie 2 du didacticiel de démarrage rapide.localhost:8000
   
-    ------------
-   <h3 style="color:#088A85" id="rep-id" >Conteneuriser une application </h3>
-Download and install Docker Desktop
-![docker desktop](docker desktop.png)
+    
+	
+  
 
 
 
 
 
 
-   <h3 style="color:#088A85" id="synthese-id" >Synthèse et analyse spectrale d’une gamme de musique</h3>
-<h5 style="color:#FF8000"> Synthèse d’une gamme de musique</h5
+
+  
 
   --------------------
   <h3> <a href="#up-id"> UP </h3>
