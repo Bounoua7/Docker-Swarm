@@ -6,7 +6,6 @@
 Docker Swarm</h1>
              </br>
 
-<h4 style="background-color:#F6CEF5"  id="up-id"> Réalisé par: OUM KOULTHOUME BOUNOUA </h4>
 
 
 ------------
@@ -33,7 +32,7 @@ Docker Swarm</h1>
 
  <h3 style="color:#088A85" id="rep-id" >Conteneuriser une application </h3>
 
-On aurez besoin des éléments suivants pour conteneuriser l'application todo-list sur Docker  :
+On aura besoin des éléments suivants pour conteneuriser l'application todo-list sur Docker  :
 <ul>
 <li>Docker s’exécutant localement.
 <li>Un client Git.
@@ -100,7 +99,7 @@ docker build -t getting-started .
 
 Le . à la fin de la commande indique à Docker qu’il doit rechercher le dans le répertoire courant. 
 
-La command `docker images` affiche les images construits. 
+La command `docker images` affiche les images construites. 
 
 ![docker images](https://user-images.githubusercontent.com/86807424/213256529-d3a186db-6a35-42df-8c21-7aa70a92cd5b.png)
 
@@ -142,12 +141,12 @@ après avoir le status sur docker system info Swarm: active
 ![SWarm active](https://user-images.githubusercontent.com/86807424/213259362-cc6ce5ec-4635-4c2d-a53d-e14a2f1ae60a.png)
 
 
-Swarm fournit de nombreux outils pour la mise à l’échelle, la mise en réseau, la sécurisation et la maintenance de vos applications conteneurisées, au-delà des capacités des conteneurs eux-mêmes. 
+Swarm fournit de nombreux outils pour la mise à l’échelle, la mise en réseau, la sécurisation et la maintenance de nos applications conteneurisées, au-delà des capacités des conteneurs eux-mêmes. 
 
 Tous les objets Swarm peuvent et doivent être décrits dans des manifestes appelés fichiers de pile. 
 
 Écrivons un fichier de pile simple pour exécuter et gérer notre application Todo, l’image de conteneur créée dans la partie de conteneurisation. 
-   Création de fichier YAML dans le repertoire Getting-started 'bb-stack.yaml' et y mettre le code suivant 
+   Création de fichier YAML dans le repertoire Getting-started 'bb-stack.yaml' et y mettre le code suivant :
    
    ````javascript
 version: '3.7'
@@ -166,14 +165,14 @@ services:
 ![deploy](https://user-images.githubusercontent.com/86807424/213260221-6a6490f5-0729-47c2-a383-46c272e68348.png)
 
 
-Swarm also creates a Docker network by default to isolate the containers deployed as part of your stack.
+Swarm crée aussi Docker network par defaut pour isoler les "containers" deployés comme partie de notre "stack".
 
    ````javascript
 docker service ls
    ````
    ![docker service ls ](https://user-images.githubusercontent.com/86807424/213260251-e73586db-4d21-493a-9f9e-baba790599a8.png)
 
-  Cela indique que les conteneurs  sont opérationnels. En outre, nous voyons que le port 8000 de notre machine de développement est transféré au port 3000 dans votre conteneur de mise en route.
+  Cela indique que les conteneurs  sont opérationnels. En outre, nous voyons que le port 8000 de notre machine de développement est transféré au port 3000 dans notre conteneur de mise en route.
     
 ![demobb](https://user-images.githubusercontent.com/86807424/213261285-241d3644-6565-4ee3-a73e-84f4d751425b.png)
 
@@ -192,6 +191,7 @@ Dans le navigateur on trouve notre application Todo à l’adresse, comme lorsqu
 
 
 
+<h4 style="background-color:#F6CEF5"  id="up-id"> Réalisé par: OUM KOULTHOUME BOUNOUA </h4>
 
   
 
