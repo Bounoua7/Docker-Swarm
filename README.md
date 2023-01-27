@@ -35,7 +35,6 @@ Docker Swarm</h1>
 On aura besoin des éléments suivants pour conteneuriser l'application todo-list sur Docker  :
 <ul>
 <li>Docker s’exécutant localement.
-<li>Un client Git.
 <li>Le IDE Visual Studio Code
 </ul>
 <h4>Téléchargement</h4>
